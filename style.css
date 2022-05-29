@@ -6,6 +6,7 @@ input[type="text"]{
 input[type="date"]{
     margin-left: 20px;
     margin-right: 10px;
+    backgorund-color: white;
 }
 
 button{
