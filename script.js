@@ -34,7 +34,7 @@ var inp9 = document.getElementById('val9');
 var inp10 = document.getElementById('val10');
 var inp11 = document.getElementById('val11');
 var inp12 = document.getElementById('val12');
-// var inp13 = document.getElementById('val13');
+var inp13 = document.getElementById('val13');
 // var inp14 = document.getElementById('val14');
 // var inp15 = document.getElementById('val15');
 // var inp16 = document.getElementById('val16');
@@ -42,18 +42,6 @@ var inp12 = document.getElementById('val12');
 // var inp18 = document.getElementById('val18');
 // var inp19 = document.getElementById('val19');
 // var inp20 = document.getElementById('val20');
-var d1 = document.getElementById("date1");
-var d2 = document.getElementById("date2");
-var d3 = document.getElementById("date3");
-var d4 = document.getElementById("date4");
-var d5 = document.getElementById("date5");
-var d6 = document.getElementById("date6");
-var d7 = document.getElementById("date7");
-var d8 = document.getElementById("date8");
-var d9 = document.getElementById("date9");
-var d10 = document.getElementById("date10");
-var d11 = document.getElementById("date11");
-var d12 = document.getElementById("date12");
 
 var din = document.getElementById('tareek');
 
@@ -63,8 +51,6 @@ var day = dateObj.getUTCDate();
 var year = dateObj.getUTCFullYear();
 
 newdate = day + "-" + month + "-" + year;
-
-
 
 
 localStorage.setItem("date", newdate);
@@ -85,7 +71,7 @@ inp9.value = localStorage.getItem("key9");
 inp10.value = localStorage.getItem("key10");
 inp11.value = localStorage.getItem("key11");
 inp12.value = localStorage.getItem("key12");
-// inp13.value = localStorage.getItem("key13");
+inp13.value = localStorage.getItem("key13");
 // inp14.value = localStorage.getItem("key14");
 // inp15.value = localStorage.getItem("key15");
 // inp16.value = localStorage.getItem("key16");
@@ -94,26 +80,12 @@ inp12.value = localStorage.getItem("key12");
 // inp19.value = localStorage.getItem("key19");
 // inp20.value = localStorage.getItem("key20");
 
-d1.value = localStorage.getItem("dat1");
-d2.value = localStorage.getItem("dat2");
-d3.value = localStorage.getItem("dat3");
-d4.value = localStorage.getItem("dat4");
-d5.value = localStorage.getItem("dat5");
-d6.value = localStorage.getItem("dat6");
-d7.value = localStorage.getItem("dat7");
-d8.value = localStorage.getItem("dat8");
-d9.value = localStorage.getItem("dat9");
-d10.value = localStorage.getItem("dat10");
-d11.value = localStorage.getItem("dat11");
-d12.value = localStorage.getItem("dat12");
-
 
 
 function increment1() {
 
     if (btn1) {
         inp1.value++;
-        localStorage.setItem("key1", inp1.value);
     }
 }
 
@@ -121,7 +93,6 @@ function increment2() {
 
     if (btn2) {
         inp2.value++;
-        localStorage.setItem("key2", inp2.value);
     }
 }
 
@@ -129,7 +100,6 @@ function increment3() {
 
     if (btn3) {
         inp3.value++;
-        localStorage.setItem("key3", inp3.value);
     }
 }
 
@@ -137,7 +107,6 @@ function increment4() {
 
     if (btn4) {
         inp4.value++;
-        localStorage.setItem("key4", inp4.value);
     }
 }
 
@@ -145,7 +114,6 @@ function increment5() {
 
     if (btn5) {
         inp5.value++;
-        localStorage.setItem("key5", inp5.value);
     }
 }
 
@@ -153,7 +121,6 @@ function increment6() {
 
     if (btn6) {
         inp6.value++;
-        localStorage.setItem("key6", inp6.value);
     }
 }
 
@@ -161,7 +128,6 @@ function increment7() {
 
     if (btn7) {
         inp7.value++;
-        localStorage.setItem("key7", inp7.value);
     }
 }
 
@@ -169,7 +135,6 @@ function increment8() {
 
     if (btn8) {
         inp8.value++;
-        localStorage.setItem("key8", inp8.value);
     }
 }
 
@@ -177,7 +142,6 @@ function increment9() {
 
     if (btn9) {
         inp9.value++;
-        localStorage.setItem("key9", inp9.value);
     }
 }
 
@@ -185,7 +149,6 @@ function increment10() {
 
     if (btn10) {
         inp10.value++;
-        localStorage.setItem("key10", inp10.value);
     }
 }
 
@@ -193,7 +156,6 @@ function increment11() {
 
     if (btn11) {
         inp11.value++;
-        localStorage.setItem("key11", inp11.value);
     }
 }
 
@@ -201,17 +163,16 @@ function increment12() {
 
     if (btn12) {
         inp12.value++;
-        localStorage.setItem("key12", inp12.value);
     }
 }
 
-// function increment13() {
+function increment13() {
 
-//     if (btn13) {
-//         inp13.value++;
-//         localStorage.setItem("key13", inp13.value);
-//     }
-// }
+    if (btn13) {
+        inp13.value++;
+        localStorage.setItem("key13", inp13.value);
+    }
+}
 
 // function increment14() {
 
@@ -287,7 +248,7 @@ function resetting() {
         inp10.value = 0;
         inp11.value = 0;
         inp12.value = 0;
-        // inp13.value = 0;
+        inp13.value = 0;
         // inp14.value = 0;
         // inp15.value = 0;
         // inp16.value = 0;
@@ -296,18 +257,7 @@ function resetting() {
         // inp19.value = 0;
         // inp20.value = 0;
 
-        d1.value = "dd-mm-yyyy";
-        d2.value = "dd-mm-yyyy";
-        d3.value = "dd-mm-yyyy";
-        d4.value = "dd-mm-yyyy";
-        d5.value = "dd-mm-yyyy";
-        d6.value = "dd-mm-yyyy";
-        d7.value = "dd-mm-yyyy";
-        d8.value = "dd-mm-yyyy";
-        d9.value = "dd-mm-yyyy";
-        d10.value = "dd-mm-yyyy";
-        d11.value = "dd-mm-yyyy";
-        d12.value = "dd-mm-yyyy";
+     
         
         
         localStorage.clear();
@@ -319,18 +269,7 @@ function resetting() {
 }
 
 function setdate(){
-    localStorage.setItem("dat1",d1.value);
-    localStorage.setItem("dat2",d2.value);
-    localStorage.setItem("dat3",d3.value);
-    localStorage.setItem("dat4",d4.value);
-    localStorage.setItem("dat5",d5.value);
-    localStorage.setItem("dat6",d6.value);
-    localStorage.setItem("dat7",d7.value);
-    localStorage.setItem("dat8",d8.value);
-    localStorage.setItem("dat9",d9.value);
-    localStorage.setItem("dat10",d10.value);
-    localStorage.setItem("dat11",d11.value);
-    localStorage.setItem("dat12",d12.value);
+
 
     localStorage.setItem("key1", inp1.value);
     localStorage.setItem("key2", inp2.value);
@@ -344,6 +283,23 @@ function setdate(){
     localStorage.setItem("key10", inp10.value);
     localStorage.setItem("key11", inp11.value);
     localStorage.setItem("key12", inp12.value);
+    localStorage.setItem("key13", inp13.value);
+
 
 }
+
+// function datechange(){
+
+//     var num=date;
+//     localStorage.setItem("key14", num);
+
+//     if (date == num){
+//         alert("same date");
+//     }
+
+//     else{
+//         alert("date changed");
+//         localStorage.setItem("key14", num);
+//     }
+// }
 
