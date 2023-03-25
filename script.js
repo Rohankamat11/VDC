@@ -170,7 +170,6 @@ function increment13() {
 
     if (btn13) {
         inp13.value++;
-        localStorage.setItem("key13", inp13.value);
     }
 }
 
@@ -234,7 +233,7 @@ function increment13() {
 function resetting() {
 
 
-    let text = "Press a button!\n For reset!";
+    let text = "Are you Sure?";
     if (confirm(text) == true) {
         inp1.value = 0;
         inp2.value = 0;
